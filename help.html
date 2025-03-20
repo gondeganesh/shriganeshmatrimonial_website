@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+       
+    <link href="matrimony.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <!---------------font-icon link------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <!---------------collapse-navbar demo------------------>
+ <div class="topNav">
+    <div class="container py-2">
+        <span><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; 9096220424</span>&nbsp;&nbsp;
+        <span><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;info@shriganesh.com</span>
+        <span class="float-end"><i class="fa-brands fa-square-facebook fa-2x"></i></span>
+    </div>
+  </div>
+  
+  <div class="container-fluid navbar navbar-expand-sm navbar-dark justify-content-center sticky-top "
+  style=" background-color:rgb(237, 54, 84);">
+  <div class="container">
+  <!-- <img src="logo.png" style="height: 50px; width:20%;margin-right:40px;"> -->
+   <h2 class="text-white">shri ganesh metromonial</h2>
+  <button class="navbar-toggler" data-bs-target="#gani" data-bs-toggle="collapse"><span
+          class="navbar-toggler-icon"></span></button>
+  
+  <div class="collapse navbar-collapse" id="gani">
+      <ul class="navbar-nav">
+  
+          <li class="nav-item"><a href="home.html" class="nav-link  text-white">home</a></li>
+          <li class="nav-item" data-bs-target="#login" data-bs-toggle="modal"><a href="#" class="nav-link  text-white">Login</a></li>
+  
+          <!--  modal-->
+          
+          <li class="nav-item"><a href="register.html" class="nav-link  text-white">Register</a></li>
+          <li class="nav-item"><a href="search.html" class="nav-link  text-white">Search Options</a></li>
+          <li class="nav-item"><a href="membership.html" class="nav-link  text-white">Membership</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link  text-white">Contact Us</a></li>
+          <li class="nav-item"><a href="help.html" class="nav-link  text-white">Help</a></li>
+  
+      </ul>
+  </div>
+  </div>
+  
+  
+  <!-- Modal Structure -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+  <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="loginLabel">Member Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>So login if you're a member; if not, please register and become a member.</p>
+          <form>
+              <div class="row">
+                  <div class="col-md-7">
+                      <input type="text" placeholder="Email Id" class="form-control mb-2"><br>
+                      <input type="password" placeholder="Password" class="form-control mb-2"><br>
+                      <input type="checkbox">&nbsp;Remember me<br>
+                      <button type="button" class="btn btn-success mt-2">Log in</button>
+                      <button type="button" class="btn btn-danger mt-2">Login with OTP</button>
+  
+                      <ul class="mt-3">
+                          <li class="page-item"><a href="/matrimony/Forget.html" class="page-link">Forget Password</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-5">
+                      <div class="card">
+                          <div class="card-body">
+                              <p>Not a Member yet?</p>
+                              <button type="button" class="btn btn-primary text-white"><a href="/matrimony/register.html" class="no-hover">Register Now! (Free)</a></button> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+  </div>
+  </div>
+  
+  <!-- jQuery and Bootstrap JS -->
+  
+  <script>
+  $(document).ready(function(){
+  // Optionally, show the modal on page load
+  // $('#login').modal('show');
+  });
+  </script>
+  
+  
+  </div>
+    
+  <!-------------------first page to register---------------->
+  <div style="width:100%;height:80px;background-color:purple;">
+    <h2 style="padding-left:30px;color:whitesmoke;">Help</h2>
+  </div>
+  
+  <section class="faqContent">
+    <div class="container">
+        <h4 class="text-danger">We have developed the FAQs based on questions asked by our members and are sure that you will find answers to your questions here.</h4>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       <h3 class="text-warning">How to fill the online registration form on Mangalashtak.com?</h3> 
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                     <h4>  Go to the online registration form. Fill out the required (marked * symbol) information as accurately and click on the Register button. We will send your user id and password to your email id, and you will become a Registered member of Mangalashtak.com. It is absolutely FREE of cost!</h4> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h3 class="text-warning"> How much money do I have to give to Register on Mangalashtak.com for membership?</h3>   
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                       <h4> It is absolutely FREE of cost. Submit your profile is absolutely free of cost. A nominal fee has to be paid to view the contact details of others.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapsethree">
+                      <h3 class="text-warning">When does the registration get activated?</h3>  
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                    <h4>  Once we get your registration form and your payment receipts are confirmed, your service will be activated and you can start using our services.</h4>  
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                       <h3 class="text-warning">What is a Mangalashtak.com paid Membership?</h3> 
+                    </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                      <h4> Membership with which you are entitled to view the others profile on Mangalashtak.com is entirely FREE of cost. However, to view the contact details of other profiles on Mangalashtak.com there is a minimal service charge. This service is not available for non-paying FREE members of Mangalashtak.com .</h4> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                      <h3 class="text-warning">What are the benefits of Registering on Mangalashtak.com ?</h3>  
+                    </button>
+                </h2>
+                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                     <h4>  You have to be Registered member for searching and viewing the profiles.
+
+                        You have to be a paid member for viewing the contact details of profiles.
+                        
+                        You can add information about yourself and your family - FREE.</h4>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingsix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                       <h3 class="text-warning">I already Registered but cannot login to my Mangalashtak.com account. Why?</h3> 
+                    </button>
+                </h2>
+                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-info">
+                     <h4> When you done Register on Mangalashtak.com you will get an USERNAME and PASSWORD after registration. That contains your Mangalashtak.com "userid (Matrimony ID)" and "password". If you have not received for whatever reasons, then your Mangalashtak.com account is still inactive. Then feel free to contact us and we will send your userid and password.</h4>     
+                    </div>
+                </div>
+            </div>
+
+
+ 
+            
+            <!-- Repeat similar structure for other FAQs -->
+            
+        </div>
+    </div>
+</section>
+<br>
+
+<!------------------------------------------------------->
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h2 class="text-center text-white">shriganesh.com</h2>
+                <hr class="text-white">
+                <p class="text-white p-5">shriganesh.com, the leading Marathi Matrimony service provider for the Marathi community has the network in 6 Districts across Maharashtra Now. with well mannered and traditional associates to assist you in search for a partner.</p>
+            </div>
+
+            <!-- About Us Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h2 class="text-center text-white">About Us</h2>
+                <hr class="text-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About Mangalashtak.com »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact Us »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Sitemap »</a></li>
+                </ul>
+            </div>
+
+            <!-- Information Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h2 class="text-center text-white">Information</h2>
+                <hr class="text-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Terms of Use »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Privacy Policy »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Help »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact Us »</a></li>
+                </ul>
+            </div>
+
+            <!-- Our TVC Section (YouTube Video) -->
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <h2 class="text-center text-white">Our TVC</h2>
+                <hr class="text-white">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/pW5qHm4rbIQ" class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bottom Copyright Section -->
+<div class="bg-dark" style="width: 100%; height: 80px;">
+    <p class="text-center text-white p-4 mb-0">
+        Copyright © 2024 shriganesh.com - All rights reserved.
+    </p>
+</div>
+
+  
+
+</body>
+</html>

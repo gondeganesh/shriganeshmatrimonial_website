@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-----------------------external css lib------------------------>
+    <!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link href="matrimony.css" type="text/css" rel="stylesheet">
+
+    <!-----------------------external js lib------------------------>
+    <!-- <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!---------------font-icon link------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    
+    <!---------------collapse-navbar demo------------------>
+    <div class="topNav">
+        <div class="container py-2">
+            <span><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; 9096220424</span>&nbsp;&nbsp;
+            <span><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;info@shriganesh.com</span>
+            <span class="float-end"><i class="fa-brands fa-square-facebook fa-2x"></i></span>
+        </div>
+    </div>
+
+    <div class="container-fluid navbar navbar-expand-sm navbar-dark justify-content-center sticky-top "
+        style=" background-color:rgb(237, 54, 84);">
+        <div class="container">
+        <!-- <img src="logo.png" style="height: 50px; width:20%;margin-right:40px;"> -->
+         <h2 class="text-white">shri ganesh metromonial</h2>
+        <button class="navbar-toggler" data-bs-target="#gani" data-bs-toggle="collapse"><span
+                class="navbar-toggler-icon"></span></button>
+        
+        <div class="collapse navbar-collapse" id="gani">
+            <ul class="navbar-nav">
+
+                <li class="nav-item"><a href="home.html" class="nav-link  text-white">home</a></li>
+
+                <li class="nav-item" data-bs-target="#login" data-bs-toggle="modal"><a href="#" class="nav-link  text-white">Login</a></li>
+
+                <!--  modal-->
+                
+                <li class="nav-item"><a href="register.html" class="nav-link  text-white">Register</a></li>
+                <li class="nav-item"><a href="search.html" class="nav-link  text-white">Search Options</a></li>
+                <li class="nav-item"><a href="membership.html" class="nav-link  text-white">Membership</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link  text-white">Contact Us</a></li>
+                <li class="nav-item"><a href="help.html" class="nav-link  text-white">Help</a></li>
+
+            </ul>
+        </div>
+        </div>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true" data-bs-backdrop="false">
+    
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="loginLabel">Member Me</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>So login if you're a member; if not, please register and become a member.</p>
+                <form>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <input type="text" placeholder="Email Id" class="form-control mb-2"><br>
+                            <input type="password" placeholder="Password" class="form-control mb-2"><br>
+                            <input type="checkbox">&nbsp;Remember me<br>
+                            <button type="button" class="btn btn-success mt-2"><a href="/home.html" class="no-hover">Log in</a></button>
+                            <button type="button" class="btn btn-danger mt-2">Login with OTP</button>
+
+                            <ul class="mt-3">
+                                <li class="page-item"><a href="/Forget.html" class="page-link">Forget Password</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Not a Member yet?</p>
+                                    <button type="button" class="btn btn-primary text-white"><a href="/register.html" class="no-hover">Register Now! (Free)</a></button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+
+<script>
+    $(document).ready(function(){
+        // Optionally, show the modal on page load
+        // $('#login').modal('show');
+    });
+</script>
+
+        
+    </div>
+    
+
+    <div class="imgdiv">
+        <div class="text rounded-2 d-flix justify-content-center align-content-center">
+            <h3 class="text-white text-center  px-4">Thousand Of Possibilies <br> Lets Starts Search</h3>
+        </div>
+    </div>
+    <!----------------form-------------->
+    <div class="form">
+        <div class="container">
+            <form>
+                <div class="row pt-2 d-flex justify-content-center align-content-center p-4">
+                    <div class="col-md-2">
+                        <label class="text-white">looking for</label>
+                        <select class="form-control text-white" style="background-color: #880e4f;">
+                            <option>male</option>
+                            <option>female</option>
+                        </select>
+
+                    </div>
+
+                        <div class="col-md-1">
+                            <label class="text-white">age</label>
+                            <select class="form-control text-white" style="background-color: #880e4f;">
+                                <option>28</option>
+                                <option>27</option>
+                                <option>26</option>
+                                <option>25</option>
+                                <option>24</option>
+                                <option>23</option>
+                                <option>22</option>
+                                <option>21</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-1">
+                            <label class="text-white">TO</label>
+                            <select class="form-control text-white"style="background-color: #880e4f;">
+                                <option>28</option>
+                                <option>27</option>
+                                <option>26</option>
+                                <option>25</option>
+                                <option>24</option>
+                                <option>23</option>
+                                <option>22</option>
+                                <option>21</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="text-white">Religion</label>
+                            <select class="form-control text-white"style="background-color: #880e4f;">
+                                <option>select</option>
+                                <option>hindu</option>
+                                <option>muslim</option>
+                                 <option>jaine</option> <option>panjabi</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="text-white">cast</label>
+                            <select class="form-control text-white"style="background-color: #880e4f;">
+                                <option>select</option>
+                            
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                          <button class="btn btn-primary mt-4">search&nbsp;<i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+ 
+    <!--------------------------selects------------------------------->
+
+    <div class="container">
+        <h1 class="text-center mt-3" style="color:rgb(237, 54, 84);">steps to find your match</h1>
+        <p class="text-center mt-3">फक्त चार सोपी पावलं तुम्हाला तुमच्या अपेक्षेप्रमाणे स्थळे शोधण्यासाठी मदत करू शकतील.</p>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card" style="border:none;">
+                    <div class="card-body">
+                        <div class="inner-cars m-auto rounded-circle  d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-pen-to-square" style="font-size:50px;color:white;"></i>
+
+
+                        </div>
+                        <h3 class="text-center" style="color:rgb(237,54,84);">Register</h3>
+                        <p class="text-center">आपल्या संपूर्ण माहितीसह मंगलाष्टक.कॉम वर आपले प्रोफाईल तयार करा.</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="border:none;">
+                    <div class="card-body">
+                        <div class="inner-cars m-auto rounded-circle  d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 50px;color:white;"></i>
+
+                        </div>
+                        <h3 class="text-center" style="color:rgb(237,54,84);">Search</h3>
+                        <p class="text-center">आपल्या अपेक्षेप्रमाणे स्थळे शोधण्यासाठी उपलब्ध असलेले विविध सर्च पर्याय वापरा</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+          
+            <div class="col-lg-3">
+                <div class="card" style="border:none;">
+                    <div class="card-body">
+                        <div class="inner-cars m-auto rounded-circle  d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-circle-check" style="font-size: 50px;color:white;"></i>
+
+                        </div>
+                        <h3 class="text-center" style="color:rgb(237,54,84);">Select</h3>
+                        <p class="text-center">आपल्या अपेक्षेनुसार योग्य वाटणाऱ्या स्थळांची निवड करा</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="border: none;">
+                    <div class="card-body">
+                        <div class="inner-cars m-auto rounded-circle  d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-message" style="font-size: 50px;color:white;"></i>
+
+                        </div>
+                        <h3 class="text-center" style="color:rgb(237,54,84);">Contact</h3>
+                        <p class="text-center">योग्य वाटणाऱ्या स्थळांना सभासद शुल्क भरून फोन किंवा मेल ने संपर्क करा</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------success---------------------->
+    <div class="container ">
+        <h1 class="text-center mt-3"  style="color:rgb(237, 54, 84);" >Success Stories</h1>
+        <h2 class="text-center mt-3">have a look at some of sucess stories from Mangalashtak.com</h2>
+      
+        <!-- <h3 class="text-center bg-danger" >View More success stories</h3> -->
+        <div class="view">
+            <a href="#" class="text-white nav-item nav-link"><h4>View More success stories</h4></a>
+        </div><br><br>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img2.jpg" style="width:100%;height:250px;">
+                    </div>
+                    <div class="card-footer">
+           <h2>atul & dnyaneshwari</h2>
+                    </div>
+                </div>
+        
+        
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img4.jpeg" style="width:100%;height:250px;">
+                    </div>
+                    <div class="card-footer">
+           <h2>vishal & vaishnavi</h2>
+                    </div>
+                </div>
+        
+        
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img3.jpeg" style="width:100%;height:250px;">
+                    </div>
+                    <div class="card-footer">
+           <h2>aadesh & rutuja</h2>
+                    </div>
+                </div>
+        
+        
+            </div>
+            </div>
+        </div><br><br>
+        <!------------------------------------Community Search----------------->
+          <div class="container py-3">
+            <h1 class="text-center mt-3" style="color:rgb(237, 54, 84);">Community Search</h1>
+             
+            <div class="link py-5" style="padding: 10px;">
+                <label><h2>cast</h2></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="font-size: 20px;">Maratha Matrimon |</span>
+                    <span style="font-size: 20px;">Mali Matrimony |</span>
+                    <span style="font-size: 20px;">Sonar Matrimonials |</span>
+                    <span style="font-size: 20px;">Marathi Brahmin Matrimony |</span>
+                    <span style="font-size: 20px;">Chambhar Matrimony |</span>
+                    <span style="font-size: 20px;">Rajput Matrimony |</span>
+                    <span style="font-size: 20px;">Shimpi Matrimony |</span><br>
+                    <span style="font-size: 20px;">Marwari Matrimony |</span>
+                    <span style="font-size: 20px;">Bhandari Matrimony |</span>
+                    <span style="font-size: 20px;">Lingayat Matrimony |</span>
+                    <span style="font-size: 20px;">Dhangar Matrimony |</span>
+                    <span style="font-size: 20px;">Nhavi Matrimony |</span>
+                    <span style="font-size: 20px;">Vanjari Matrimony |</span>
+                    <span style="font-size: 20px;">Kunbi Matrimony |</span>
+                    <span style="font-size: 20px;">Teli Matrimony |</span>
+                    <span style="font-size: 20px;">More...</span>
+                    <hr>
+        </div>
+
+        <div class="link py-1" style="padding: 20px;">
+            <label><h2>Education</h2></label>&nbsp;&nbsp;&nbsp;
+                <span style="font-size: 20px;">Bachelors |</span>
+                <span style="font-size: 20px;">Masters |</span>
+                <span style="font-size: 20px;">Doctorate |</span>
+                <span style="font-size: 20px;">Diploma |</span>
+                <span style="font-size: 20px;">Doctor |</span>               
+                 <span style="font-size: 20px;">Engineer |</span>
+                <span style="font-size: 20px;">Other |</span>
+                <span style="font-size: 20px;">More... |</span>
+
+                
+                <hr>
+    </div>
+
+    <div class="link py-2" style="padding: 10px;">
+        <label><h2>City</h2></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="font-size: 20px;">Mumbai Matrimony |</span>
+            <span style="font-size: 20px;">Pune Matrimony |</span>
+            <span style="font-size: 20px;">Aurangabad Matrimony |</span>
+            <span style="font-size: 20px;">Nagpur Matrimony |</span>
+            <span style="font-size: 20px;">Solapur Matrimony |</span>
+            <span style="font-size: 20px;">Ahmednagar Matrimony |</span>
+            <span style="font-size: 20px;">Amravati Matrimony |</span><br>
+            <span style="font-size: 20px;">Jalgaon Matrimony |</span>
+            <span style="font-size: 20px;">Kolhapur Matrimony |</span>
+            <span style="font-size: 20px;">Latur Matrimony |</span>
+            <span style="font-size: 20px;">Nanded Matrimony |</span>
+            <span style="font-size: 20px;">Nashik Matrimony |</span>
+            <span style="font-size: 20px;">Sangli Matrimony |</span>
+            <span style="font-size: 20px;">Thane Matrimony |</span>
+            <span style="font-size: 20px;">Satara Matrimony |</span>
+            <span style="font-size: 20px;">More...</span>
+            <hr>
+          </div>
+          </div>
+<!--  -->
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <h2 class="text-center text-white">shriganesh.com</h2>
+                <hr class="text-white">
+                <p class="text-white px-3">
+                    shriganesh.com, the leading Marathi Matrimony service provider for the Marathi community, has a network in 6 districts across Maharashtra with well-mannered and traditional associates to assist you in your search for a partner.
+                </p>
+            </div>
+
+            <!-- About Us Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <h2 class="text-center text-white">About Us</h2>
+                <hr class="text-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About Mangalashtak.com »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact Us »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Sitemap »</a></li>
+                </ul>
+            </div>
+
+            <!-- Information Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <h2 class="text-center text-white">Information</h2>
+                <hr class="text-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Terms of Use »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Privacy Policy »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Help »</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact Us »</a></li>
+                </ul>
+            </div>
+
+            <!-- Our TVC Section (YouTube Video) -->
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                <h2 class="text-center text-white">Our TVC</h2>
+                <hr class="text-white">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe 
+                        src="https://www.youtube.com/embed/pW5qHm4rbIQ" 
+                        class="embed-responsive-item" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bottom Copyright Section -->
+<div class="bg-dark" style="width: 100%; height: auto;">
+    <p class="text-center text-white py-3 mb-0">
+        2024 shriganesh.com - All rights reserved.
+    </p>
+</div>
+
+
+</body>
+</html>
